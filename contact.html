@@ -14,7 +14,9 @@
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
+        rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -100,72 +102,83 @@
                                 <h2>Contact us</h2>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <!-- Start contact icon column -->
-                        <div class="col-md-4">
-                            <div class="contact-icon text-center">
-                                <div class="single-icon">
-                                    <i class="bi bi-phone"></i>
-                                    <p>
-                                        GSM:<a href="tel:+32 499 75 56" style="color:black"> +32 499 75 56<br></a>
-                                    </p>
+                        <div class="row">
+                            <!-- Start contact icon column -->
+                            <div class="col-md-6">
+                                <div class="contact-icon text-center">
+                                    <div class="single-icon">
+                                        <i class="bi bi-phone"></i>
+                                        <p>
+                                            GSM:<a href="tel:+32 499 75 56" style="color:black"> +32 499 75 56<br></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Start contact icon column -->
+                            <div class="col-md-6">
+                                <div class="contact-icon text-center">
+                                    <div class="single-icon">
+                                        <i class="bi bi-envelope"></i>
+                                        <p>
+                                            Email:<a href="mailto:info@jh-carcleaning.be" style="color:black">
+                                                info@jh-carcleaning.be<br></a>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Start contact icon column -->
-                        <div class="col-md-4">
-                            <div class="contact-icon text-center">
-                                <div class="single-icon">
-                                    <i class="bi bi-envelope"></i>
-                                    <p>
-                                        Email:<a href="mailto:info@jh-carcleaning.be" style="color:black"> info@jh-carcleaning.be<br></a>
-                                    </p>
+                        <div class="row">
+
+                            <!-- Start Picture -->
+                            <div class="col-md-6">
+                                <div class="well-left">
+                                    <div class="single-well">
+                                        <a href="#">
+                                            <img src="assets/img/new/tail-1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <!-- End Picture -->
+
+                            <!-- Start  contact -->
+                            <div class="col-md-6">
+                                <div class="form contact-form">
+                                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                        <div class="form-group">
+                                            <input type="text" name="name" class="form-control" id="name"
+                                                placeholder="Naam" required>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <input type="email" class="form-control" name="email" id="email"
+                                                placeholder="E-mail" required>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <input type="text" class="form-control" name="subject" id="subject"
+                                                placeholder="Onderwerp" required>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <textarea class="form-control" name="message" rows="5" placeholder="Bericht"
+                                                required></textarea>
+                                        </div>
+                                        <div class="my-3">
+                                            <div class="loading">Loading</div>
+                                            <div class="error-message"></div>
+                                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                                        </div>
+                                        <div class="text-center"><button type="submit">Verstuur</button></div>
+                                    </form>
                                 </div>
                             </div>
+                            <!-- End Left contact -->
                         </div>
-                    </div>
-                    <div class="row">
-
-                        <!-- Start Google Map -->
-                        <div class="col-md-6">
-                            <!-- Start Map -->
-                            <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=nl&amp;q=Nijverheidslaan%2050,%20moen+(JH-cleaning)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
-                            <!-- End Map -->
-                        </div>
-                        <!-- End Google Map -->
-
-                        <!-- Start  contact -->
-                        <div class="col-md-6">
-                            <div class="form contact-form">
-                                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                                    <div class="form-group">
-                                        <input type="text" name="name" class="form-control" id="name" placeholder="Naam" required>
-                                    </div>
-                                    <div class="form-group mt-3">
-                                        <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required>
-                                    </div>
-                                    <div class="form-group mt-3">
-                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Onderwerp" required>
-                                    </div>
-                                    <div class="form-group mt-3">
-                                        <textarea class="form-control" name="message" rows="5" placeholder="Bericht" required></textarea>
-                                    </div>
-                                    <div class="my-3">
-                                        <div class="loading">Loading</div>
-                                        <div class="error-message"></div>
-                                        <div class="sent-message">Your message has been sent. Thank you!</div>
-                                    </div>
-                                    <div class="text-center"><button type="submit">Verstuur</button></div>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- End Left contact -->
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- End Contact Section -->
+            <!-- End Contact Section -->
 
     </main>
     <!-- End #main -->
@@ -179,14 +192,13 @@
                         <div class="footer-content">
                             <div class="footer-head">
                                 <div class="footer-logo">
-                                    <h2><span>JH </span>Car Cleaning</h2>
+                                    <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid">
                                 </div>
-
-                                <p></p>
                                 <div class="footer-icons">
                                     <ul>
                                         <li>
-                                            <a href="https://www.facebook.com/JHProfessionalCarCleaning" target="blank"><i class="bi bi-facebook"></i></a>
+                                            <a href="https://www.facebook.com/JHProfessionalCarCleaning"
+                                                target="blank"><i class="bi bi-facebook"></i></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -201,8 +213,10 @@
                                 <p>
                                 </p>
                                 <div class="footer-contacts">
-                                    <p><span>Tel:</span><a href="tel:+32 499 75 66 77" style="color:black"> +32 499 75 56 77</a></p>
-                                    <p><span>Email:</span><a href="mailto:info@jh-carcleaning.be" style="color:black"> info@jh-carcleaning.be</a></p>
+                                    <p><span>Tel:</span><a href="tel:+32 499 75 66 77" style="color:black"> +32 499 75
+                                            56 77</a></p>
+                                    <p><span>Email:</span><a href="mailto:info@jh-carcleaning.be" style="color:black">
+                                            info@jh-carcleaning.be</a></p>
                                 </div>
                             </div>
                         </div>
@@ -237,7 +251,8 @@
     <!-- End  Footer -->
 
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
