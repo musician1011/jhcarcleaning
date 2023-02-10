@@ -1,3 +1,13 @@
+<?php
+if ($_GET['formSend'] !== null){
+    $isSend = $_GET['formSend'];
+    $page = $_SERVER['PHP_SELF'];
+    $sec = "5";
+    header("Refresh: $sec; url=$page");
+}else {
+    $isSend = false;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -77,7 +87,7 @@
                     </li>
                     <li><a href="bedrijven.html">Voor Bedrijven</a></li>
                     <li><a href="milieu.html">Milieu</a></li>
-                    <li><a class="active" href="contact.html">Contact</a></li>
+                    <li><a class="active" href="contact.php">Contact</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
@@ -163,9 +173,9 @@
                                         <div class="my-3">
                                             <div class="loading">Loading</div>
                                             <div class="error-message"></div>
-                                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                                            <div class="sent-message" style="display: <?= $isSend? 'block': 'none' ?>">Uw bericht is verstuurd. Hartelijk dank!</div>
                                         </div>
-                                        <div class="text-center"><button type="submit">Verstuur</button></div>
+                                        <div class="text-center"><button type="submit">Verstuur bericht</button></div>
                                     </form>
                                 </div>
                             </div>
@@ -187,9 +197,9 @@
                     <div class="col-md-4">
                         <div class="footer-content">
                             <div class="footer-head">
-                                <div class="footer-logo">
+                                <!--<div class="footer-logo">
                                     <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid">
-                                </div>
+                                </div>-->
                                 <div class="footer-icons">
                                     <ul>
                                         <li>
