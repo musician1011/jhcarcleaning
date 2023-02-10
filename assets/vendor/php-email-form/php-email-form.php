@@ -228,7 +228,7 @@ class PHP_Email_Form {
 
       $mail->send();
 
-      header ('Location: http://willemdev3.innovisia.nl?formSend=true');
+      header ('Location: http://willemdev.innovisia.nl?formSend=true');
     } catch (Exception $e) {
       //return 'Mailer Error: ' . $mail->ErrorInfo;
     }
