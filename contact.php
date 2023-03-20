@@ -15,7 +15,7 @@ if ($_GET['formSend'] !== null){
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>JH-Car Cleaning - Contact</title>
+    <title>Contact - JH Carcleaning</title>
     <meta content="Welkom bij JH Carcleaning. Via deze pagina kan je contact met ons opnemen." name="description">
     <meta content="carcleaner, carwash, auto, schoonmaken, wassen, interieur, mobiel, wagenpark " name="keywords">
     <meta content="Willem Devriendt" name="author">
