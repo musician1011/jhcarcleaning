@@ -76,7 +76,7 @@ if ($_GET['formSend'] !== null){
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="gallery.html">Foto's</a></li>
+                    <!--<li><a href="gallery.html">Foto's</a></li>-->
                     <li class="dropdown"><a href="#"><span>Onze Diensten</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="interieur.html">Interieur</a></li>
