@@ -119,7 +119,7 @@ if ($_GET['formSend'] !== null){
                                     <div class="single-icon">
                                         <i class="bi bi-phone"></i>
                                         <p>
-                                            GSM:<a href="tel:+32 499 75 56" style="color:black"> +32 499 75 56<br></a>
+                                            GSM:<a href="tel:+32 499 75 66 77" style="color:black"> +32 499 75 66 77<br></a>
                                         </p>
                                     </div>
                                 </div>
