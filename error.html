@@ -1,13 +1,3 @@
-<?php
-if ($_GET['formSend'] !== null){
-    $isSend = $_GET['formSend'];
-    $page = $_SERVER['PHP_SELF'];
-    $sec = "5";
-    header("Refresh: $sec; url=$page");
-}else {
-    $isSend = false;
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,6 +9,29 @@ if ($_GET['formSend'] !== null){
     <meta content="Welkom bij JH Carcleaning. Via deze pagina kan je contact met ons opnemen." name="description">
     <meta content="carcleaner, carwash, auto, schoonmaken, wassen, interieur, mobiel, wagenpark " name="keywords">
     <meta content="Willem Devriendt" name="author">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        main {
+            flex: 1;
+        }
+        
+        #footer {
+            margin-top: auto;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+
 
 
     <!-- Favicons -->
@@ -40,7 +53,7 @@ if ($_GET['formSend'] !== null){
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
-        <!-- Google Tag Manager -->
+    <!-- Google Tag Manager -->
     <script>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -129,77 +142,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="row">
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="section-headline text-center">
-                                <h2>Contact us</h2>
+                                <h1>Er ging iets verkeerd, probeer opnieuw.</h1>
                             </div>
                         </div>
                         <div class="row">
-                            <!-- Start contact icon column -->
-                            <div class="col-md-6">
-                                <div class="contact-icon text-center">
-                                    <div class="single-icon">
-                                        <i class="bi bi-phone"></i>
-                                        <p>
-                                            GSM:<a href="tel:+32 499 75 66 77" style="color:black"> +32 499 75 66 77<br></a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Start contact icon column -->
-                            <div class="col-md-6">
-                                <div class="contact-icon text-center">
-                                    <div class="single-icon">
-                                        <i class="bi bi-envelope"></i>
-                                        <p>
-                                            Email:<a href="mailto:info@jh-carcleaning.be" style="color:black">
-                                                info@jh-carcleaning.be<br></a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-
-                            <!-- Start Picture -->
-                            <div class="col-md-6">
-                                <div class="well-left">
-                                    <div class="single-well">
-                                        <a href="#">
-                                            <img src="assets/img/new/tail-1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                            <!-- End Picture -->
-
-                            <!-- Start  contact -->
-                            <div class="col-md-6">
-                                <div class="form contact-form">
-                                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                                        <div class="form-group">
-                                            <input type="text" name="name" class="form-control" id="name" placeholder="Naam" required>
-                                        </div>
-                                        <div class="form-group mt-3">
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required>
-                                        </div>
-                                        <div class="form-group mt-3">
-                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Onderwerp" required>
-                                        </div>
-                                        <div class="form-group mt-3">
-                                            <textarea class="form-control" name="message" rows="5" placeholder="Bericht" required></textarea>
-                                        </div>
-                                        <div class="text-center"><button type="submit">Verstuur bericht</button></div>
-                                    </form>
-                                </div>
-                            </div>
-                            <!-- End Left contact -->
                         </div>
                     </div>
                 </div>
             </div>
             <!-- End Contact Section -->
+            <!-- Start  contact -->
+            <div class="col-md-12">
+                <div class="form contact-form">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="text-center"><button type="button" onclick="window.location.href='contact.php'">Ga terug</button></div>
+                    </form>
+                </div>
+            </div>
+            <!-- End Left contact -->
 
     </main>
     <!-- End #main -->
